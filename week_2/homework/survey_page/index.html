@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник для владельцев котов</title>
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/451366/survey.svg" type="image/x-icon">
+</head>
+<body>
+    <h1>Опросник для владельцев котов</h1>
+    <form method="post">
+        <label for="petname">Кличка питомца</label>
+        <input type="text" id="petname" name="petname" required>
+        <br>
+        <br>
+        <label for="fio">ФИО владельца</label>
+        <input type="text" id="fio" name="fio" required>
+        <br>
+        <br>
+        <label for="tel">Номер телефона</label>
+        <input type="tel" id="tel" name="tel" required>
+        <br>
+        <br>
+        <label for="pet-type">Порода животного</label>
+        <select name="pet-type" id="pet-type">
+            <option value="">Выберите породу</option>
+            <option value="shorthair">Короткошерстный</option>
+            <option value="longhair">Длинношерстный</option>
+            <option value="semi-longhair">Полудлинношерстный</option>
+            <option value="Siamese-Oriental Shorthair">Сиамо-Ориентальная короткошёрстная</option>
+            <option value="other">Другое</option>
+        </select>
+        <br>
+        <br>
+        <label for="age">Возраст питомца</label>
+        <input type="text" id="age" name="age" required>
+        <br>
+        <p>Какой тип питания у вашего питомца?</p>
+        <input type="checkbox" name="food" value="dry-food" id="dry-food">
+        <label for="dry-food">Сухой корм</label>
+        <input type="checkbox" name="food" value="wet-food" id="wet-food"> 
+        <label for="wet-food">Влажный корм</label>
+        <input type="checkbox" name="food" value="natural-food" id="natural-food">
+        <label for="natural-food">Натуральный корм</label>
+        <br>
+        <br>
+        <label>Пол:</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Мужской</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Женский</label>
+        <br>
+        <br>
+        <label for="comments"> Ваши комментарии:</label>
+        <br>
+        <textarea name="comments" id="comments" rows="10" cols="20"></textarea>
+        <br>
+        <br>
+        <label for="photo">Фотография питомца:</label>
+        <br>
+        <br>
+        <input type="file" name="photo" id="photo">
+        <br>
+        <br>
+        <input type="submit" value="Сохранить">
+    </form>   
+    
+</body>
+</html>
