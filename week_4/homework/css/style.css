@@ -209,7 +209,7 @@ margin-left: 430px;
     margin-right: 43.5px;
 }
 
-input[type=name], input[type=telefon],input[type=email],input[type=review] {
+input[type=text] {
     color: #424268;
     font-family: Roboto;
     font-size: 14px;
