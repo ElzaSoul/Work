@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OкнаХаус</title>
     <link rel="shortcut icon" href="./assets/images/geo.png" type="image/png">
-    <link rel="stylesheet" href="./сss/style.css">
-    <link rel="stylesheet" href="./сss/normalize.css"
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo-container">
+        <div>
             <img src="./assets/images/logo.png" alt="Логотип" id="logo"> 
         </div>
         <nav class="navigation">
@@ -23,10 +24,13 @@
                 <li id="questions-answer"><a href="questions-answer">Вопрос-ответ</a> </li>
                 <li id="contacts"><a href="contacts">Контакты</a> </li>
             </ul>
-            <button class="button-1">Заявка на замер 
-                <img src="" alt="">
+            <button class="button-1">
+                <img id="button_icon-1" src="./assets/images/button1.png" alt="иконка-кнопки">
+                Заявка на замер 
             </button>
-            <button class="button-2">Заказать расчет
+            <button class="button-2">
+                <img id="button_icon-2" src="./assets/images/button2.png" alt="иконка-кнопки">
+                Заказать расчет
             </button>
         </nav>
     </header>
@@ -34,17 +38,95 @@
         <div class="background"> 
             <div class="text-1"> Окна Хаус - </div>
             <div class="text-2">Профессиональный подход к остеклению </div>
+            <img id="text-4" src="./assets/images/text-4.png" alt="картинка">
             <div class="text-4"> Современные окна и балконные конструкции по доступным ценам
             </div>
+            <img id="text-5" src="./assets/images/text-5.png" alt="картинка">
             <div class="text-5"> Квалифицированный подход к решению задач любой сложности
             </div>
+            <img id="text-6" src="./assets/images/text-6.png" alt="картинка">
             <div class="text-6">Гарантия высочайшего качества нашей продукции
             </div>
-        </div>
-
-
-
-
+            <div class="form-container">
+                <h2 class="head-form">Вызвать замерщика на дом</h2>
+                <form action="form-action" method="post">
+                    <div class="form-group">
+                        <input type="name" id="name" name="name" required placeholder="Представьтесь,пожалуйста "></div>
+                        <div class="form-group">
+                        <input type="telefon" id="telefon" name="telefon" required placeholder="Номер телефона"></div>
+                        <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail"></div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="term" id="term">
+                        <label class="label" for="term">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</label>
+                    </div>
+                    <button class="button-form">Отправить заявку</button>
+                </form>
+            </div>
     </main>
+    <footer>
+        <h2 class="head-footer">Контакты</h2>
+        <div>
+            <h3 class="head-footer-2" >Бесплатная консультация:</h3>
+            <div class="contacts">
+                <img class="telefon" src="./assets/images/telefon.png" alt="телефон"> <span class="tel">8 (4932) 34 - 31 - 40 &nbsp &nbsp &nbsp 8 (905) 109 - 31 - 40</span>
+            </div>
+            <div class="contacts">
+                <img class="location" src="./assets/images/location.png" alt="локация"> <span class="adress">Иваново, ул. Генерала Хлебникова, д.54, оф.303 </span>  
+            </div>
+            <div class="contacts">
+                <img class="email" src="./assets/images/mail.png" alt="почта"> <span class="email-adress"> okna@haus.ru</span>
+            </div>
+            <div class="contacts">
+                <div class="text">
+                    Установку должны выполнять только эксперты. Нам доверяют сотни семей. 
+                    Узнайте поробнее, какие решения вам подходят. 
+                    Вы можете приобрести недорогие товары 
+                    при гарантированно 
+                    высоком качестве.
+                </div>
+                <div class="icons-wrapper">
+                    <img class="icons-footer" src="./assets/images/Vk.png" alt="вк">
+                    <img class="icons-footer" src="./assets/images/F.png" alt="фейсбук">
+                    <img class="icons-footer" src="./assets/images/Instagram.png" alt="инстаграм">
+                    <img class="icons-footer" src="./assets/images/telegram.png" alt="телеграм">
+                    <img class="icons-footer" src="./assets/images/tube.png" alt="ютуб">
+                    <img class="icons-footer" src="./assets/images/odnoklassniki.png" alt="одноклассники">
+                </div>
+            <div>
+            <img id="image-workers" src="./assets/images/workers.png" alt="работники">
+            </div>
+            <div class="form-container-2">
+                <h2 class="head-form-2">Остались вопросы?</h2>
+                <form action="form-action" method="post">
+                    <div class="form-group">
+                        <input type="name" id="name" name="name" required placeholder="Ваше имя"></div>
+                        <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail"></div>
+                        <div class="form-group">
+                        <input type="review" id="review" name="review" required placeholder="Ваш отзыв"></div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="term" id="term">
+                        <label class="label" for="term">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button class="button-form-2">Отправить сообщение</button>
+                </form>
+            </div>
+    </footer>
+    <div class="low"> 
+        <div>
+            <img src="./assets/images/logo-2.png" alt="Логотип" id="logo-2"> <span class="low-text">
+                © ООО “Окна Хаус”, 2011 - 2022
+            </span>
+            <nav>
+                <ul class="list-footer">
+                    <li id="privacy-policy">
+                        <a href="privacy-policy">Политика кофиденциальности</a>
+                    </li>
+                    <li id="terms">
+                        <a href="terms">Пользовательское соглашение</a>
+                    </li>
+                </ul>
+            </nav>
 </body>
 </html>
