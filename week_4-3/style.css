@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1920px;
+    background-image: url(./assets/img/ptica_oboi.jpg); 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+header{
+    display: flex;
+    height: 100px;
+}
+main{
+    display: flex;
+    height: 900px;
+}
+footer {
+    display: flex;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;;
+    width: 1920px;
+    height:100px;
+    gap: 300px;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    display: flex;
+    margin-left: 100px;
+    color: black;
+    font-family: roboto;
+    background-color: aliceblue;
+    height: 50px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.header-logo svg {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.navigation {
+    display: flex;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    font-family: roboto;
+    list-style: none;
+    margin-right: 100px;
+}
+.list a {
+    color: black;
+    text-decoration: none;    
+    background-color: aliceblue;
+    padding: 10px;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.basic-main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 1920px;
+
+}
+.main-title {
+    display: flex;
+    justify-content: center;
+    font-family: roboto;
+    background-color: aliceblue;
+
+}
+.main-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    }
+
+.main-card img {
+    transition: transform 0.3s ease;
+    }
+
+.main-card:hover img {
+    transform: scale(1.1);
+    }
+.main-card::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 30px;
+    opacity: 0;
+    }
+.main-card:hover::after {
+    opacity: 1;
+    top: 170px;}
+
+.title-main-card{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.footer-container{
+    display: flex;
+    width: 1920px;
+    height: 100px;
+}
+.footer-container h2{
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

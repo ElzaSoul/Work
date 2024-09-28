@@ -11,116 +11,213 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="./assets/images/logo.png" alt="Логотип" id="logo"> 
+        <div class="wrap-head">
+            <a href="https://example.com">
+                <img src="./assets/images/logo.png" alt="Логотип" id="logo"></a>
+            <nav class="navigation">
+                <ul class=list>
+                    <li class="menu-item"><a href="Servises">Услуги</a> </li>
+                    <li class="menu-item"><a href="goods">Продукция</a> </li>
+                    <li class="menu-item"><a href="about-company">О компании</a> </li>
+                    <li class="menu-item"><a href="portfolio">Портфолио</a> </li>
+                    <li class="menu-item"><a href="questions-answer">Вопрос-ответ</a> </li>
+                    <li class="menu-item"><a href="contacts">Контакты</a> </li>
+                </ul>
+            </nav>
+            <div class="button">
+                <button class="button-1">
+                    <img src="./assets/images/button1.png" alt="иконка-кнопки">
+                    Заявка на замер 
+                </button>
+                <button class="button-2">
+                    <img src="./assets/images/button2.png" alt="иконка-кнопки">
+                    Заказать расчет
+                </button>
+            </div>
         </div>
-        <nav class="navigation">
-            <ul class=list>
-                <li id="servises"><a href="Servises">Услуги</a> </li>
-                <li id="goods"><a href="goods">Продукция</a> </li>
-                <li id="about-company"><a href="about-company">О компании</a> </li>
-                <li id="portfolio"><a href="portfolio">Портфолио</a> </li>
-                <li id="questions-answer"><a href="questions-answer">Вопрос-ответ</a> </li>
-                <li id="contacts"><a href="contacts">Контакты</a> </li>
-            </ul>
-            <button class="button-1">
-                <img id="button_icon-1" src="./assets/images/button1.png" alt="иконка-кнопки">
-                Заявка на замер 
-            </button>
-            <button class="button-2">
-                <img id="button_icon-2" src="./assets/images/button2.png" alt="иконка-кнопки">
-                Заказать расчет
-            </button>
-        </nav>
-    </header>
-    <main>
-        <div class="background"> 
-            <div class="text-1"> Окна Хаус - </div>
-            <div class="text-2">Профессиональный подход к остеклению </div>
-            <img id="text-4" src="./assets/images/text-4.png" alt="картинка">
-            <div class="text-4"> Современные окна и балконные конструкции по доступным ценам
-            </div>
-            <img id="text-5" src="./assets/images/text-5.png" alt="картинка">
-            <div class="text-5"> Квалифицированный подход к решению задач любой сложности
-            </div>
-            <img id="text-6" src="./assets/images/text-6.png" alt="картинка">
-            <div class="text-6">Гарантия высочайшего качества нашей продукции
+        <div class="banner">
+            <div class="flex-container">
+                <div class="banner-title">
+                    <h3 class="bannerWindowTitle"> Окна Хаус - </h3>
+                    <p class="bunnerSubtitle">Профессиональный подход к остеклению </p>
+                </div>
+                <div class="banner-cards">
+                    <div class="banner-card">
+                        <img id="#" src="./assets/images/text-4.png" alt="картинка">
+                        <p class="bannerTitle"> Современные окна и балконные конструкции по доступным ценам</p>
+                    </div>
+                    <div class="banner-card">
+                        <img id="#" src="./assets/images/text-5.png" alt="картинка">
+                        <p class="bannerTitle"> Квалифицированный подход к решению задач любой сложности </p>
+                    </div>
+                    <div class="banner-card">
+                        <img id="#" src="./assets/images/text-6.png" alt="картинка">
+                        <p class="bannerTitle">Гарантия высочайшего качества нашей продукции</p>
+                    </div>
+                </div>
             </div>
             <div class="form-container">
-                <h2 class="head-form">Вызвать замерщика на дом</h2>
-                <form action="form-action" method="post">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder="Представьтесь,пожалуйста "></div>
-                        <div class="form-group">
-                        <input type="text" id="telefon" name="telefon" required placeholder="Номер телефона"></div>
-                        <div class="form-group">
-                        <input type="text" id="email" name="email" placeholder="E-mail"></div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="term" id="term">
-                        <label class="label" for="term">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</label>
-                    </div>
-                    <button class="button-form">Отправить заявку</button>
-                </form>
+                <div class="form-title">
+                        <h2 class="head-form">Вызвать замерщика на дом</h2>
+                        <form action="form-action" method="post" class="form-flex">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Представьтесь,пожалуйста ">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="telefon" name="telefon" required placeholder="Номер телефона">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="email" name="email" placeholder="E-mail">
+                            </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="term" id="term">
+                            <label class="label" for="term">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</label>
+                        </div>
+                        <div class="button">
+                        <button class="button-form">Отправить заявку</button>
+                        </div>
+                        </form> 
+                </div>
+            </div>    
+        </div>
+</header>
+<main>
+    <div class="main-container">
+        <div class="TitleNavImg">
+            <div class="main-title">
+                <h3 class="productTitle"> Продукция</h3>
+                <nav class="navigation-mail">
+                    <ul class=list-main>
+                        <li class="menu-item-main"><a href="standaer">Стандарт</a> </li>
+                        <li class="menu-item-main"><a href="business">Бизнес</a> </li>
+                        <li class="menu-item-main"><a href="Premium">Премиум</a> </li>
+                        <li class="menu-item-main"><a href="exclusive">"Эксклюзив</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-text">
+                <div class="main-text-container">
+                    <h2 class="textTitle"> Rehau Blitz New</h2>
+                    <p class="textTitle1"> Cохраняют тепло в доме, защищают от  шума и вписываются в любой интерьер. Практичный выбор</p>
+                    <p class="textTitle2"> Системная глубина <span class="dots"> ............................................... </span> <span class="end-number">>60/60 мм </span>
+                        Ширина стеклопакета<span class="dots">........................................... </span><span class="end-number">24/31 мм </span>
+                        Воздушные камеры <span class="dots">...............................................</span><span class="end-number">3</span>
+                        Теплосопротивление <span class="dots">............................................</span><span class="end-number">0,70 м2С/ВТ</span> </p>
+                </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <h2 class="head-footer">Контакты</h2>
-        <div>
-            <h3 class="head-footer-2" >Бесплатная консультация:</h3>
-            <div class="contacts">
-                <img class="telefon" src="./assets/images/telefon.png" alt="телефон"> <span class="tel">8 (4932) 34 - 31 - 40 &nbsp; &nbsp; &nbsp; 8 (905) 109 - 31 - 40</span>
+        <div class="main-container-2">
+            <div class="img-main-2">
+                <img class="main-title-2" src="./assets/images/schandart.png" alt="заголовок">
             </div>
-            <div class="contacts">
-                <img class="location" src="./assets/images/location.png" alt="локация"> <span class="adress">Иваново, ул. Генерала Хлебникова, д.54, оф.303 </span>  
-            </div>
-            <div class="contacts">
-                <img class="email" src="./assets/images/mail.png" alt="почта"> <span class="email-adress"> okna@haus.ru</span>
-            </div>
-            <div class="contacts">
-                <div class="text">
-                    Установку должны выполнять только эксперты. Нам доверяют сотни семей. 
-                    Узнайте поробнее, какие решения вам подходят. 
-                    Вы можете приобрести недорогие товары 
-                    при гарантированно 
-                    высоком качестве.
+            <div class="main-cards">
+                <div class="main-card">
+                    <div class="icon-container">
+                        <img class="main-img" src="./assets/images/img1.png" alt="картинка">
+                    </div>
+                    <div class="text-container">
+                        <p class="mainP"> Сертифицированный производитель Rehau</p>
+                    </div>
                 </div>
-                <div class="icons-wrapper">
-                    <img class="icons-footer" src="./assets/images/Vk.png" alt="вк">
-                    <img class="icons-footer" src="./assets/images/F.png" alt="фейсбук">
-                    <img class="icons-footer" src="./assets/images/Instagram.png" alt="инстаграм">
-                    <img class="icons-footer" src="./assets/images/telegram.png" alt="телеграм">
-                    <img class="icons-footer" src="./assets/images/tube.png" alt="ютуб">
-                    <img class="icons-footer" src="./assets/images/odnoklassniki.png" alt="одноклассники">
+                <div class="main-card">
+                    <div class="icon-container">
+                        <img class="main-img" src="./assets/images/img2.png" alt="картинка">
+                    </div>
+                    <div class="text-container">
+                        <p class="mainP"> Инновационный оконный завод</p>
+                    </div>
                 </div>
-            </div>
+                <div class="main-card">
+                    <div class="icon-container">
+                        <img class="main-img" src="./assets/images/img3.png" alt="картинка">
+                    </div>
+                    <div class="text-container">
+                        <p class="mainP"> Лидер по переработке профилей Rehau в России</p>
+                    </div>
+                </div>
+                <div class="main-card">
+                    <div class="icon-container">
+                        <img class="main-img" src="./assets/images/img4.png" alt="картинка">
+                    </div>
+                    <div class="text-container">
+                        <p class="mainP"> Высокотехнологичное автоматизированное оборудование</p>
+                    </div>
+                </div>
+                <div class="main-card">
+                    <div class="icon-container">
+                        <img class="main-img" src="./assets/images/img5.png" alt="картинка">
+                    </div>
+                    <div class="text-container">
+                        <p class="mainP"> Широкий ассортимент продукции</p>
+                    </div>
+                </div> 
+            </div>    
+        </div>
+        <div class="button-main">
+            <img src="./assets/images/button2.png" alt="иконка-кнопки">Заказать расчет
+        </div>
+    </div>
+</main>
+    <!-- <footer>
+        <div class="ПОСТАВИТЬ КЛАСС"></div>
+            <h2 class="head-footer">Контакты</h2>
             <div>
-            <img id="image-workers" src="./assets/images/workers.png" alt="работники">
-            </div>
-            <div class="form-container-2">
-                <h2 class="head-form-2">Остались вопросы?</h2>
-                <form action="form-action" method="post">
-                    <div class="form-group">
-                        <input type="text" id="name-2" name="name" required placeholder="Ваше имя">
+                <h3 class="head-footer-2" >Бесплатная консультация:</h3>
+                <div class="contacts">
+                    <img class="telefon" src="./assets/images/telefon.png" alt="телефон"> <span class="tel">8 (4932) 34 - 31 - 40 &nbsp; &nbsp; &nbsp; 8 (905) 109 - 31 - 40</span>
+                </div>
+                <div class="contacts">
+                    <img class="location" src="./assets/images/location.png" alt="локация"> <span class="adress">Иваново, ул. Генерала Хлебникова, д.54, оф.303 </span>  
+                </div>
+                <div class="contacts">
+                    <img class="email" src="./assets/images/mail.png" alt="почта"> <span class="email-adress"> okna@haus.ru</span>
+                </div>
+                <div class="contacts">
+                    <div class="text">
+                        Установку должны выполнять только эксперты. Нам доверяют сотни семей. 
+                        Узнайте поробнее, какие решения вам подходят. 
+                        Вы можете приобрести недорогие товары 
+                        при гарантированно 
+                        высоком качестве.
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="email-2" name="email" placeholder="E-mail">
+                    <div class="icons-wrapper">
+                        <img class="icons-footer" src="./assets/images/Vk.png" alt="вк">
+                        <img class="icons-footer" src="./assets/images/F.png" alt="фейсбук">
+                        <img class="icons-footer" src="./assets/images/Instagram.png" alt="инстаграм">
+                        <img class="icons-footer" src="./assets/images/telegram.png" alt="телеграм">
+                        <img class="icons-footer" src="./assets/images/tube.png" alt="ютуб">
+                        <img class="icons-footer" src="./assets/images/odnoklassniki.png" alt="одноклассники">
                     </div>
-                    <div class="form-group">
-                        <input type="text" id="review" name="review" required placeholder="Ваш отзыв">
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="term" id="term-2">
-                        <label class="label" for="term-2">Я согласен на обработку персональных данных</label>
-                    </div>
-                    <button class="button-form-2">Отправить сообщение</button>
-                </form>
+                </div>
+                <div>
+                <img id="image-workers" src="./assets/images/workers.png" alt="работники">
+                </div>
+                <div class="form-container-2">
+                    <h2 class="head-form-2">Остались вопросы?</h2>
+                    <form action="form-action" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name-2" name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="email-2" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="review" name="review" required placeholder="Ваш отзыв">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="term" id="term-2">
+                            <label class="label" for="term-2">Я согласен на обработку персональных данных</label>
+                        </div>
+                        <button class="button-form-2">Отправить сообщение</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
     <div class="low"> 
         <div>
-            <img src="./assets/images/logo-2.png" alt="Логотип" id="logo-2"> <span class="low-text">
+            <a href="https://example.com">
+                <img src="./assets/images/logo-2.png" alt="Логотип" id="logo-2"><span class="low-text">
                 © ООО “Окна Хаус”, 2011 - 2022
             </span>
             <nav>
@@ -134,6 +231,6 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
