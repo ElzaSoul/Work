@@ -20,6 +20,7 @@ main{
 footer {
     display: flex;
 }
+/* Header, расположение лого, тайтла и навигации*/
 .header-container {
     display: flex;
     align-items: center;
@@ -29,14 +30,12 @@ footer {
     height:100px;
     gap: 300px;
 }
-
 .header-logo{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 .header-title {
     display: flex;
     margin-left: 100px;
@@ -47,12 +46,10 @@ footer {
     align-items: center;
     margin-left: 10px;
 }
-
 .header-logo svg {
     display: flex;
     background-color: aliceblue;
 }
-
 .navigation {
     display: flex;
 }
@@ -70,6 +67,8 @@ footer {
     background-color: aliceblue;
     padding: 10px;
 }
+
+/*Расположение карточек*/
 .main-container {
     display: flex;
     flex-direction: row;
@@ -104,6 +103,7 @@ footer {
     height: 300px;
     }
 
+    /* Всплывающие подсказки*/
 .main-card img {
     transition: transform 0.3s ease;
     }
